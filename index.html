@@ -258,9 +258,9 @@
     <div class="ambient-glow-olive w-[600px] h-[600px] bottom-[-100px] left-[20%]"></div>
 
   <!-- ================= FLOATING NAV ================= -->
-    <header class="fixed top-4 inset-x-0 z-50 px-3 sm:px-6 lg:px-8">
-        <!-- Changed to w-1/2 mx-auto for exact half-screen length centered -->
-        <nav class="w-1/2 mx-auto flex items-center justify-between bg-white/80 backdrop-blur-xl border border-stone/60 rounded-2xl px-3 sm:px-4 py-3 shadow-lg shadow-wood/5 transition-all duration-300">
+    <header class="fixed top-4 left-0 right-0 z-50 px-3 sm:px-6 lg:px-8">
+        <!-- Navbar spans exactly half the screen width, anchored to the left -->
+        <nav class="w-1/2 flex items-center justify-between bg-white/80 backdrop-blur-xl border border-stone/60 rounded-2xl px-3 sm:px-4 py-3 shadow-lg shadow-wood/5 transition-all duration-300">
             <a href="index.html" class="flex shrink-0 items-center space-x-2 group">
                 <div class="flex items-center space-x-1">
                     <span class="block w-1.5 h-6 bg-wood rounded-full transform group-hover:scale-y-110 transition-transform"></span>
@@ -270,7 +270,7 @@
                 <span class="text-lg font-bold text-wood tracking-tight brand-lowercase">clars<span class="text-terracotta">.</span></span>
             </a>
 
-            <!-- Reduced padding on links to ensure they fit perfectly inside the half-width container -->
+            <!-- Desktop links (hidden below lg) -->
             <div class="hidden lg:flex items-center space-x-1">
                 <a href="about.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">About</a>
                 <a href="prices.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Prices</a>
@@ -289,8 +289,8 @@
             </div>
         </nav>
 
-        <!-- Mobile Menu Container matches the half-screen width -->
-        <div id="mobileMenu" class="lg:hidden mt-3 w-1/2 mx-auto bg-white/90 backdrop-blur-2xl border border-white/80 rounded-[1.75rem] shadow-2xl shadow-wood/15 overflow-x-hidden overflow-y-auto transition-all duration-500 ease-out max-h-0 opacity-0 pointer-events-none -translate-y-2">
+        <!-- Mobile Menu Container also anchored left and spans half width -->
+        <div id="mobileMenu" class="lg:hidden mt-3 w-1/2 bg-white/90 backdrop-blur-2xl border border-white/80 rounded-[1.75rem] shadow-2xl shadow-wood/15 overflow-x-hidden overflow-y-auto transition-all duration-500 ease-out max-h-0 opacity-0 pointer-events-none -translate-y-2">
             <div class="p-4">
                 <div class="flex items-center justify-between px-1 pb-3">
                     <div>
@@ -299,7 +299,6 @@
                     </div>
                     <span class="w-8 h-8 rounded-xl bg-olive/10 text-olive flex items-center justify-center"><i class="fa-solid fa-compass text-xs"></i></span>
                 </div>
-                <!-- Using flex-col for better fit inside the half-screen width -->
                 <div class="flex flex-col gap-2">
                     <a href="index.html" class="group flex items-center gap-3 p-2.5 rounded-xl bg-sand/55 border border-stone/40 hover:bg-olive/10 hover:border-olive/25 transition-all duration-300">
                         <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-wood shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-house"></i></span>
@@ -445,7 +444,6 @@
                         </div>
                     </div>
 
-                    <div class="bento-card bento-slate rounded-4xl p-7 flex items-start space-x-5 shadow-lg shadow-slateBlue/                    <!-- ... (Continuing from the previous Concept pillars) ... -->
                     <div class="bento-card bento-slate rounded-4xl p-7 flex items-start space-x-5 shadow-lg shadow-slateBlue/10 ring-1 ring-white/60">
                         <div class="w-12 h-12 squircle-icon-slate flex-shrink-0 flex items-center justify-center text-white text-xl">
                             <i class="fa-solid fa-broom"></i>
@@ -850,7 +848,8 @@
                             <span class="text-base font-bold text-wood">0803 372 5707</span>
                         </div>
                     </div>
-                    <div class="w-9 h-9 rounded-full bg-terracotta/10 border border-terracotta/30 flex items-center justify-center text-terracotta group-hover:bg-terracotta group-hover:text-white transition-all                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <div class="w-9 h-9 rounded-full bg-terracotta/10 border border-terracotta/30 flex items-center justify-center text-terracotta group-hover:bg-terracotta group-hover:text-white transition-all">
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
                     </div>
                 </a>
 
