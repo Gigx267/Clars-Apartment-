@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Clars Apartment | Our Story & Philosophy</title>
-    <meta name="description" content="Discover the story behind Clars Apartment. A private, modern sanctuary in GRA Phase 3, Port Harcourt. Learn about our design philosophy, commitment to comfort, and the thoughtful details that define your stay.">
+    <title>Clars Apartment | Luxury Short Stays in GRA Phase 3, Port Harcourt</title>
+    <meta name="description" content="A private, modern sanctuary in GRA Phase 3, Port Harcourt. Uninterrupted power, high-speed Wi-Fi, gated security, and warm considered design. From ₦150,000/night.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -201,9 +201,36 @@
             border-radius: 9999px;
         }
 
+        /* FAQ accordion */
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .faq-icon { transform: rotate(45deg); }
+        .faq-icon { transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+
         /* Scroll reveal */
         .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
         .reveal.in-view { opacity: 1; transform: translateY(0); }
+
+        /* Marquee */
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-track {
+            display: flex;
+            width: max-content;
+            animation: marquee 28s linear infinite;
+        }
+        .marquee-mask:hover .marquee-track { animation-play-state: paused; }
+
+        @media (max-width: 639px) {
+            .editorial-title {
+                font-size: clamp(2rem, 8vw, 2.5rem);
+                line-height: 1.02;
+                overflow-wrap: break-word;
+            }
+            .marquee-track { animation-duration: 36s; }
+        }
 
         /* Keep the page transitions calm, consistent, and accessible. */
         html { scroll-padding-top: 6rem; }
@@ -230,90 +257,85 @@
     <div class="ambient-glow-terracotta w-[600px] h-[600px] top-[75%] right-[-120px]"></div>
     <div class="ambient-glow-olive w-[600px] h-[600px] bottom-[-100px] left-[20%]"></div>
 
-    <!-- ================= FLOATING NAV ================= -->
-    <header class="fixed top-4 inset-x-0 z-50 px-4 sm:px-6 lg:px-8">
-        <nav class="max-w-7xl mx-auto flex items-center justify-between bg-white/80 backdrop-blur-xl border border-stone/60 rounded-2xl px-5 sm:px-6 py-3 shadow-lg shadow-wood/5 transition-all duration-300">
-            <a href="index.html" class="flex items-center space-x-3 group">
+  <!-- ================= FLOATING NAV ================= -->
+    <header class="fixed top-4 inset-x-0 z-50 px-3 sm:px-6 lg:px-8">
+        <!-- Changed to w-1/2 mx-auto for exact half-screen length centered -->
+        <nav class="w-1/2 mx-auto flex items-center justify-between bg-white/80 backdrop-blur-xl border border-stone/60 rounded-2xl px-3 sm:px-4 py-3 shadow-lg shadow-wood/5 transition-all duration-300">
+            <a href="index.html" class="flex shrink-0 items-center space-x-2 group">
                 <div class="flex items-center space-x-1">
-                    <span class="block w-1.5 h-7 bg-wood rounded-full transform group-hover:scale-y-110 transition-transform"></span>
-                    <span class="block w-1.5 h-8 bg-terracotta rounded-full transform group-hover:scale-y-110 transition-transform delay-75"></span>
-                    <span class="block w-1.5 h-6 bg-olive rounded-full transform group-hover:scale-y-110 transition-transform delay-150"></span>
+                    <span class="block w-1.5 h-6 bg-wood rounded-full transform group-hover:scale-y-110 transition-transform"></span>
+                    <span class="block w-1.5 h-7 bg-terracotta rounded-full transform group-hover:scale-y-110 transition-transform delay-75"></span>
+                    <span class="block w-1.5 h-5 bg-olive rounded-full transform group-hover:scale-y-110 transition-transform delay-150"></span>
                 </div>
-                <span class="text-xl font-bold text-wood tracking-tight brand-lowercase">clars<span class="text-terracotta">.</span></span>
+                <span class="text-lg font-bold text-wood tracking-tight brand-lowercase">clars<span class="text-terracotta">.</span></span>
             </a>
 
+            <!-- Reduced padding on links to ensure they fit perfectly inside the half-width container -->
             <div class="hidden lg:flex items-center space-x-1">
-                <a href="index.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Home</a>
-                <a href="prices.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Prices</a>
-                <a href="booking.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Book</a>
-                <a href="gallery.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Amenities</a>
-                <a href="faq.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">FAQ</a>
-                <a href="about.html" aria-current="page" class="px-3 py-2 text-[11px] font-bold text-terracotta uppercase tracking-wider rounded-full bg-terracotta/10 border border-terracotta/30 transition-all duration-200">About</a>
-                <a href="tel:08033725707" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Contact</a>
+                <a href="about.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">About</a>
+                <a href="prices.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Prices</a>
+                <a href="booking.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Book</a>
+                <a href="gallery.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Amenities</a>
+                <a href="faq.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">FAQ</a>
             </div>
 
-            <div class="flex items-center space-x-2 sm:space-x-3">
-                <a href="tel:08033725707" class="w-9 h-9 flex items-center justify-center rounded-full bg-olive/10 text-olive hover:bg-olive hover:text-white transition-colors duration-200" aria-label="Call us">
-                    <i class="fa-solid fa-phone text-xs"></i>
+            <div class="flex shrink-0 items-center space-x-2">
+                <a href="tel:08033725707" class="hidden sm:flex w-8 h-8 items-center justify-center rounded-full bg-olive/10 text-olive hover:bg-olive hover:text-white transition-colors duration-200" aria-label="Call us">
+                    <i class="fa-solid fa-phone text-[10px]"></i>
                 </a>
-                <a href="index.html" class="hidden sm:flex items-center space-x-2 px-4 sm:px-5 py-2.5 bg-wood text-white text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-wood/90 transition-all duration-200 shadow-md shadow-wood/20 active:scale-95">
-                    <span>Home</span>
-                    <i class="fa-solid fa-arrow-left text-[10px]"></i>
-                </a>
-                <button id="mobileMenuBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full bg-wood text-white hover:bg-terracotta transition-all duration-300 shadow-md shadow-wood/15" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
-                    <i class="fa-solid fa-bars text-sm"></i>
+                <button id="mobileMenuBtn" class="lg:hidden w-8 h-8 flex items-center justify-center rounded-full bg-wood text-white hover:bg-terracotta transition-all duration-300 shadow-md shadow-wood/15" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <i class="fa-solid fa-bars text-xs"></i>
                 </button>
             </div>
         </nav>
 
-        <div id="mobileMenu" class="lg:hidden mt-3 max-w-7xl mx-auto bg-white/90 backdrop-blur-2xl border border-white/80 rounded-[1.75rem] shadow-2xl shadow-wood/15 overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 pointer-events-none -translate-y-2">
-            <div class="p-4 sm:p-5">
-                <div class="flex items-center justify-between px-1 pb-4">
+        <!-- Mobile Menu Container matches the half-screen width -->
+        <div id="mobileMenu" class="lg:hidden mt-3 w-1/2 mx-auto bg-white/90 backdrop-blur-2xl border border-white/80 rounded-[1.75rem] shadow-2xl shadow-wood/15 overflow-x-hidden overflow-y-auto transition-all duration-500 ease-out max-h-0 opacity-0 pointer-events-none -translate-y-2">
+            <div class="p-4">
+                <div class="flex items-center justify-between px-1 pb-3">
                     <div>
-                        <span class="block text-[10px] font-extrabold uppercase tracking-[.22em] text-terracotta">Discover Clars</span>
-                        <span class="block text-lg font-bold text-wood tracking-tight mt-0.5">Where to next?</span>
+                        <span class="block text-[9px] font-extrabold uppercase tracking-[.2em] text-terracotta">Discover</span>
+                        <span class="block text-sm font-bold text-wood tracking-tight mt-0.5">Where to next?</span>
                     </div>
-                    <span class="w-10 h-10 rounded-2xl bg-olive/10 text-olive flex items-center justify-center"><i class="fa-solid fa-compass"></i></span>
+                    <span class="w-8 h-8 rounded-xl bg-olive/10 text-olive flex items-center justify-center"><i class="fa-solid fa-compass text-xs"></i></span>
                 </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <a href="index.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-olive/10 hover:border-olive/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-wood shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-house"></i></span>
-                        <span><span class="block text-sm font-bold text-wood">Home</span><span class="block text-[10px] text-ink/50">Welcome in</span></span>
+                <!-- Using flex-col for better fit inside the half-screen width -->
+                <div class="flex flex-col gap-2">
+                    <a href="index.html" class="group flex items-center gap-3 p-2.5 rounded-xl bg-sand/55 border border-stone/40 hover:bg-olive/10 hover:border-olive/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-wood shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-house"></i></span>
+                        <span class="text-xs font-bold text-wood">Home</span>
                     </a>
-                    <a href="prices.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-terracotta/10 hover:border-terracotta/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-tag"></i></span>
-                        <span><span class="block text-sm font-bold text-wood">Prices</span><span class="block text-[10px] text-ink/50">Stay details</span></span>
+                    <a href="prices.html" class="group flex items-center gap-3 p-2.5 rounded-xl bg-sand/55 border border-stone/40 hover:bg-terracotta/10 hover:border-terracotta/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-tag"></i></span>
+                        <span class="text-xs font-bold text-wood">Prices</span>
                     </a>
-                    <a href="booking.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-wood text-white border border-wood hover:bg-terracotta hover:border-terracotta transition-all duration-300 col-span-2">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white/15 text-white flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-calendar-check"></i></span>
-                        <span class="flex-1"><span class="block text-sm font-bold">Book your stay</span><span class="block text-[10px] text-white/65">Find your dates at Clars</span></span>
-                        <i class="fa-solid fa-arrow-right text-xs mr-1"></i>
+                    <a href="booking.html" class="group flex items-center gap-3 p-2.5 rounded-xl bg-wood text-white border border-wood hover:bg-terracotta hover:border-terracotta transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white/15 text-white flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-calendar-check"></i></span>
+                        <span class="flex-1 text-xs font-bold">Book your stay</span>
+                        <i class="fa-solid fa-arrow-right text-[10px] mr-1"></i>
                     </a>
-                    <a href="gallery.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-olive/10 hover:border-olive/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-olive shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
-                        <span><span class="block text-sm font-bold text-wood">Amenities</span><span class="block text-[10px] text-ink/50">Feel at home</span></span>
+                    <a href="gallery.html" class="group flex items-center gap-3 p-2.5 rounded-xl bg-sand/55 border border-stone/40 hover:bg-olive/10 hover:border-olive/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-olive shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                        <span class="text-xs font-bold text-wood">Amenities</span>
                     </a>
-                    <a href="faq.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-slateBlue/10 hover:border-slateBlue/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-slateBlue shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-circle-question"></i></span>
-                        <span><span class="block text-sm font-bold text-wood">FAQ</span><span class="block text-[10px] text-ink/50">Good to know</span></span>
+                    <a href="faq.html" class="group flex items-center gap-3 p-2.5 rounded-xl bg-sand/55 border border-stone/40 hover:bg-slateBlue/10 hover:border-slateBlue/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-slateBlue shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-circle-question"></i></span>
+                        <span class="text-xs font-bold text-wood">FAQ</span>
                     </a>
-                    <a href="about.html" aria-current="page" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-terracotta/10 border border-terracotta/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-heart"></i></span>
-                        <span><span class="block text-sm font-bold text-wood">About</span><span class="block text-[10px] text-ink/50">Our story</span></span>
+                    <a href="about.html" aria-current="page" class="group flex items-center gap-3 p-2.5 rounded-xl bg-terracotta/10 border border-terracotta/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-heart"></i></span>
+                        <span class="text-xs font-bold text-wood">About</span>
                     </a>
-                    <a href="tel:08033725707" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-terracotta/10 hover:border-terracotta/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-phone"></i></span>
-                        <span><span class="block text-sm font-bold text-wood">Contact</span><span class="block text-[10px] text-ink/50">Talk to our team</span></span>
+                    <a href="tel:08033725707" class="group flex items-center gap-3 p-2.5 rounded-xl bg-sand/55 border border-stone/40 hover:bg-terracotta/10 hover:border-terracotta/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-phone"></i></span>
+                        <span class="text-xs font-bold text-wood">Contact</span>
                     </a>
                 </div>
-                <div class="flex items-center justify-center gap-2 pt-4 text-[10px] font-semibold text-ink/45 tracking-wide"><span class="w-1.5 h-1.5 rounded-full bg-olive"></span> Thoughtful stays in Port Harcourt</div>
             </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 space-y-8 relative z-10">
-
-        <!-- ================= HERO / INTRO ================= -->
+     <!-- ================= HERO / INTRO ================= -->
         <section id="story" class="grid grid-cols-1 lg:grid-cols-12 gap-5 reveal">
             <div class="lg:col-span-7 bento-card bento-terracotta rounded-4xl p-8 sm:p-10 ring-1 ring-white/70 shadow-xl shadow-terracotta/10 relative overflow-hidden flex flex-col justify-between">
                 <div class="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-terracotta/15 blur-3xl pointer-events-none"></div>
@@ -831,5 +853,6 @@
             document.querySelectorAll('.reveal').forEach((section) => section.classList.add('in-view'));
         }
     </script>
+
 </body>
 </html>
