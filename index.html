@@ -223,6 +223,15 @@
         }
         .marquee-mask:hover .marquee-track { animation-play-state: paused; }
 
+        @media (max-width: 639px) {
+            .editorial-title {
+                font-size: clamp(2rem, 8vw, 2.5rem);
+                line-height: 1.02;
+                overflow-wrap: break-word;
+            }
+            .marquee-track { animation-duration: 36s; }
+        }
+
         /* Keep the page transitions calm, consistent, and accessible. */
         html { scroll-padding-top: 6rem; }
         main > section { scroll-margin-top: 6rem; }
@@ -284,7 +293,7 @@
             </div>
         </nav>
 
-        <div id="mobileMenu" class="lg:hidden mt-3 max-w-7xl mx-auto bg-white/90 backdrop-blur-2xl border border-white/80 rounded-[1.75rem] shadow-2xl shadow-wood/15 overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 pointer-events-none -translate-y-2">
+        <div id="mobileMenu" class="lg:hidden mt-3 max-w-7xl mx-auto bg-white/90 backdrop-blur-2xl border border-white/80 rounded-[1.75rem] shadow-2xl shadow-wood/15 overflow-x-hidden overflow-y-auto transition-all duration-500 ease-out max-h-0 opacity-0 pointer-events-none -translate-y-2">
             <div class="p-4 sm:p-5">
                 <div class="flex items-center justify-between px-1 pb-4">
                     <div>
@@ -558,7 +567,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
 
                 <!-- Featured rate -->
-                <div class="lg:col-span-5 bento-card bento-terracotta rounded-4xl p-8 flex flex-col justify-between relative overflow-hidden shadow-xl shadow-terracotta/10 ring-1 ring-white/70">
+                <div class="lg:col-span-5 bento-card bento-terracotta rounded-4xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-xl shadow-terracotta/10 ring-1 ring-white/70">
                     <div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-terracotta/15 blur-3xl pointer-events-none"></div>
                     <div class="space-y-4 relative z-10">
                         <div class="flex items-center justify-between">
@@ -570,7 +579,7 @@
                             All-inclusive pricing covering full power backup, high-speed internet, housekeeping, and private security.
                         </p>
                         <div class="pt-4 border-t border-stone/80 flex items-baseline space-x-3">
-                            <span class="text-5xl font-extrabold text-wood tracking-tight">₦150,000</span>
+                            <span class="text-4xl sm:text-5xl font-extrabold text-wood tracking-tight">₦150,000</span>
                             <span class="text-xs text-terracotta font-mono uppercase font-bold">/ night</span>
                         </div>
                     </div>
@@ -587,7 +596,7 @@
                 </div>
 
                 <!-- What's included -->
-                <div class="lg:col-span-7 bento-card bento-olive rounded-4xl p-8 ring-1 ring-white/60 shadow-lg shadow-olive/10">
+                <div class="lg:col-span-7 bento-card bento-olive rounded-4xl p-6 sm:p-8 ring-1 ring-white/60 shadow-lg shadow-olive/10">
                     <h3 class="text-lg font-extrabold text-wood tracking-tight mb-5">What's Included Every Night</h3>
                     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
                         <li class="flex items-start space-x-3">
@@ -1047,13 +1056,13 @@
             mobileMenu.classList.toggle('max-h-0', expanded);
             mobileMenu.classList.toggle('opacity-0', expanded);
             mobileMenu.classList.toggle('pointer-events-none', expanded);
-            mobileMenu.classList.toggle('max-h-[32rem]', !expanded);
+            mobileMenu.classList.toggle('max-h-[80vh]', !expanded);
             mobileMenu.querySelector('i').className = expanded ? 'fa-solid fa-bars text-sm' : 'fa-solid fa-xmark text-sm';
         });
         mobileMenu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
             mobileMenuBtn.setAttribute('aria-expanded', 'false');
             mobileMenu.classList.add('max-h-0', 'opacity-0', 'pointer-events-none');
-            mobileMenu.classList.remove('max-h-[32rem]');
+            mobileMenu.classList.remove('max-h-[80vh]');
             mobileMenuBtn.querySelector('i').className = 'fa-solid fa-bars text-sm';
         }));
 
