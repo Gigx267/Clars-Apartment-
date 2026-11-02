@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices & Rates | Clars Apartment, GRA Phase 3 Port Harcourt</title>
+    <meta name="description" content="Transparent, all-inclusive pricing for Clars Apartment in GRA Phase 3, Port Harcourt. From ₦150,000/night. 24/7 power, Wi-Fi, housekeeping, security and parking included.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stone: '#CDCBC3', terracotta: '#C1734A', olive: '#6B6F4A', wood: '#5B3418',
+                        ink: '#1C1917', paper: '#FAF8F5', cream: '#F4F1EA', sand: '#E8E2D9',
+                        slateBlue: '#7B8B9A', amberWarm: '#D97706', clay: '#B45A3C', moss: '#4A5D3A',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                    },
+                    borderRadius: { '4xl': '2.25rem', '5xl': '3rem' }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #FAF8F5; color: #1C1917; text-rendering: optimizeLegibility; font-family: 'Plus Jakarta Sans', sans-serif; }
+
+        .bento-card {
+            background: rgba(255,255,255,0.82); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(205,203,195,0.55);
+            box-shadow: 0 20px 40px -15px rgba(91,52,24,0.06), 0 0 1px rgba(0,0,0,0.06);
+            transition: transform .4s cubic-bezier(.16,1,.3,1), box-shadow .4s cubic-bezier(.16,1,.3,1), border-color .4s cubic-bezier(.16,1,.3,1);
+        }
+        .bento-card:hover { transform: translateY(-4px); box-shadow: 0 30px 60px -15px rgba(91,52,24,.10), 0 0 20px rgba(193,115,74,.10); border-color: rgba(193,115,74,.45); }
+        .bento-olive { background: linear-gradient(135deg, rgba(240,243,234,.95) 0%, rgba(255,255,255,.9) 100%); border: 1px solid rgba(107,111,74,.25); }
+        .bento-olive:hover { border-color: rgba(107,111,74,.6); box-shadow: 0 25px 50px -12px rgba(107,111,74,.15); }
+        .bento-terracotta { background: linear-gradient(135deg, rgba(252,242,235,.85) 0%, rgba(255,255,255,.95) 100%); border: 1px solid rgba(193,115,74,.28); }
+        .bento-terracotta:hover { border-color: rgba(193,115,74,.55); box-shadow: 0 25px 50px -12px rgba(193,115,74,.15); }
+        .bento-slate { background: linear-gradient(135deg, rgba(238,242,245,.95) 0%, rgba(255,255,255,.92) 100%); border: 1px solid rgba(123,139,154,.25); }
+        .bento-slate:hover { border-color: rgba(123,139,154,.6); box-shadow: 0 25px 50px -12px rgba(123,139,154,.15); }
+
+        .ios-pill { background: rgba(255,255,255,.9); border: 1px solid rgba(205,203,195,.7); backdrop-filter: blur(16px); box-shadow: 0 2px 10px rgba(0,0,0,.03); }
+
+        .squircle-icon { border-radius: 24%; background: linear-gradient(135deg,#6B6F4A 0%,#4A5D3A 100%); border: 1.5px solid rgba(255,255,255,.8); box-shadow: 0 8px 20px rgba(107,111,74,.25); }
+        .squircle-icon-terracotta { border-radius: 24%; background: linear-gradient(135deg,#C1734A 0%,#B45A3C 100%); border: 1.5px solid rgba(255,255,255,.8); box-shadow: 0 8px 20px rgba(193,115,74,.25); }
+        .squircle-icon-wood { border-radius: 24%; background: linear-gradient(135deg,#5B3418 0%,#7C421E 100%); border: 1.5px solid rgba(255,255,255,.8); box-shadow: 0 8px 20px rgba(91,52,24,.25); }
+        .squircle-icon-slate { border-radius: 24%; background: linear-gradient(135deg,#7B8B9A 0%,#5F7182 100%); border: 1.5px solid rgba(255,255,255,.8); box-shadow: 0 8px 20px rgba(123,139,154,.3); }
+        .squircle-icon-amber { border-radius: 24%; background: linear-gradient(135deg,#D97706 0%,#B45A3C 100%); border: 1.5px solid rgba(255,255,255,.8); box-shadow: 0 8px 20px rgba(217,119,6,.3); }
+
+        .btn-gradient-wood { background: linear-gradient(135deg,#5B3418 0%,#7C421E 100%); box-shadow: 0 10px 25px -5px rgba(91,52,24,.3); border: 1px solid rgba(255,255,255,.25); color:#fff; }
+        .btn-gradient-wood:hover { background: linear-gradient(135deg,#7C421E 0%,#9C5427 100%); box-shadow: 0 14px 30px -4px rgba(91,52,24,.4); }
+        .btn-gradient-terracotta { background: linear-gradient(135deg,#C1734A 0%,#B45A3C 100%); box-shadow: 0 10px 25px -5px rgba(193,115,74,.3); border: 1px solid rgba(255,255,255,.25); color:#fff; }
+        .btn-gradient-terracotta:hover { background: linear-gradient(135deg,#D4865A 0%,#C1734A 100%); box-shadow: 0 14px 30px -4px rgba(193,115,74,.4); }
+        .btn-gradient-olive { background: linear-gradient(135deg,#6B6F4A 0%,#4A5D3A 100%); box-shadow: 0 10px 25px -5px rgba(107,111,74,.3); border: 1px solid rgba(255,255,255,.25); color:#fff; }
+        .btn-gradient-olive:hover { background: linear-gradient(135deg,#7A7F57 0%,#5A6E47 100%); box-shadow: 0 14px 30px -4px rgba(107,111,74,.4); }
+
+        .ambient-glow-olive, .ambient-glow-terracotta, .ambient-glow-slate { position:absolute; border-radius:50%; filter: blur(80px); pointer-events:none; z-index:0; }
+        .ambient-glow-olive { background: radial-gradient(circle, rgba(107,111,74,.12) 0%, rgba(205,203,195,.05) 50%, transparent 75%); }
+        .ambient-glow-terracotta { background: radial-gradient(circle, rgba(193,115,74,.14) 0%, rgba(252,242,235,.08) 50%, transparent 75%); }
+        .ambient-glow-slate { background: radial-gradient(circle, rgba(123,139,154,.12) 0%, rgba(238,242,245,.08) 50%, transparent 75%); }
+
+        .editorial-title { font-family: 'Cormorant Garamond', Georgia, serif; letter-spacing: -0.03em; line-height: 0.95; }
+        .brand-lowercase { font-family: 'Plus Jakarta Sans', sans-serif; text-transform: lowercase; letter-spacing: .04em; font-weight: 600; }
+
+        :focus-visible { outline: 2px solid #D97706; outline-offset: 4px; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FAF8F5; }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(180deg,#C1734A 0%,#6B6F4A 100%); border-radius: 9999px; }
+
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .faq-icon { transform: rotate(45deg); }
+        .faq-icon { transition: transform .3s cubic-bezier(.16,1,.3,1); }
+
+        .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+
+        html { scroll-padding-top: 6rem; }
+        main > section { scroll-margin-top: 6rem; }
+        img, video { display: block; }
+        a, button { -webkit-tap-highlight-color: transparent; }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+            .reveal { opacity: 1; transform: none; }
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden min-h-screen relative selection:bg-terracotta selection:text-white">
+
+    <div class="ambient-glow-terracotta w-[600px] h-[600px] top-[-100px] left-[-100px]"></div>
+    <div class="ambient-glow-olive w-[700px] h-[700px] top-[20%] right-[-150px]"></div>
+    <div class="ambient-glow-slate w-[650px] h-[650px] top-[50%] left-[-100px]"></div>
+    <div class="ambient-glow-terracotta w-[600px] h-[600px] top-[75%] right-[-120px]"></div>
+    <div class="ambient-glow-olive w-[600px] h-[600px] bottom-[-100px] left-[20%]"></div>
+
+    <!-- ================= FLOATING NAV ================= -->
+    <header class="fixed top-4 inset-x-0 z-50 px-4 sm:px-6 lg:px-8">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between bg-white/80 backdrop-blur-xl border border-stone/60 rounded-2xl px-5 sm:px-6 py-3 shadow-lg shadow-wood/5 transition-all duration-300">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="flex items-center space-x-1">
+                    <span class="block w-1.5 h-7 bg-wood rounded-full transform group-hover:scale-y-110 transition-transform"></span>
+                    <span class="block w-1.5 h-8 bg-terracotta rounded-full transform group-hover:scale-y-110 transition-transform delay-75"></span>
+                    <span class="block w-1.5 h-6 bg-olive rounded-full transform group-hover:scale-y-110 transition-transform delay-150"></span>
+                </div>
+                <span class="text-xl font-bold text-wood tracking-tight brand-lowercase">clars<span class="text-terracotta">.</span></span>
+            </a>
+
+            <div class="hidden lg:flex items-center space-x-1">
+                <a href="index.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Home</a>
+                <a href="prices.html" aria-current="page" class="px-3 py-2 text-[11px] font-bold text-terracotta uppercase tracking-wider rounded-full bg-terracotta/10 border border-terracotta/30 transition-all duration-200">Prices</a>
+                <a href="booking.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Book</a>
+                <a href="gallery.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Amenities</a>
+                <a href="faq.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">FAQ</a>
+                <a href="about.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">About</a>
+                <a href="tel:08033725707" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-2 sm:space-x-3">
+                <a href="tel:08033725707" class="w-9 h-9 flex items-center justify-center rounded-full bg-olive/10 text-olive hover:bg-olive hover:text-white transition-colors duration-200" aria-label="Call us">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                </a>
+                <a href="booking.html" class="hidden sm:flex items-center space-x-2 px-4 sm:px-5 py-2.5 bg-wood text-white text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-wood/90 transition-all duration-200 shadow-md shadow-wood/20 active:scale-95">
+                    <span>Book Now</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+                <button id="mobileMenuBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full bg-wood text-white hover:bg-terracotta transition-all duration-300 shadow-md shadow-wood/15" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <i class="fa-solid fa-bars text-sm"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobileMenu" class="lg:hidden mt-3 max-w-7xl mx-auto bg-white/90 backdrop-blur-2xl border border-white/80 rounded-[1.75rem] shadow-2xl shadow-wood/15 overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 pointer-events-none -translate-y-2">
+            <div class="p-4 sm:p-5">
+                <div class="flex items-center justify-between px-1 pb-4">
+                    <div>
+                        <span class="block text-[10px] font-extrabold uppercase tracking-[.22em] text-terracotta">Discover Clars</span>
+                        <span class="block text-lg font-bold text-wood tracking-tight mt-0.5">Where to next?</span>
+                    </div>
+                    <span class="w-10 h-10 rounded-2xl bg-olive/10 text-olive flex items-center justify-center"><i class="fa-solid fa-compass"></i></span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="index.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-olive/10 hover:border-olive/25 transition-all duration-300">
+                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-wood shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-house"></i></span>
+                        <span><span class="block text-sm font-bold text-wood">Home</span><span class="block text-[10px] text-ink/50">Welcome in</span></span>
+                    </a>
+                    <a href="prices.html" aria-current="page" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-terracotta/10 border border-terracotta/25 transition-all duration-300">
+                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-tag"></i></span>
+                        <span><span class="block text-sm font-bold text-wood">Prices</span><span class="block text-[10px] text-ink/50">Stay details</span></span>
+                    </a>
+                    <a href="booking.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-wood text-white border border-wood hover:bg-terracotta hover:border-terracotta transition-all duration-300 col-span-2">
+                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white/15 text-white flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-calendar-check"></i></span>
+                        <span class="flex-1"><span class="block text-sm font-bold">Book your stay</span><span class="block text-[10px] text-white/65">Find your dates at Clars</span></span>
+                        <i class="fa-solid fa-arrow-right text-xs mr-1"></i>
+                    </a>
+                    <a href="gallery.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-olive/10 hover:border-olive/25 transition-all duration-300">
+                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-olive shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                        <span><span class="block text-sm font-bold text-wood">Amenities</span><span class="block text-[10px] text-ink/50">Feel at home</span></span>
+                    </a>
+                    <a href="faq.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-slateBlue/10 hover:border-slateBlue/25 transition-all duration-300">
+                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-slateBlue shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-circle-question"></i></span>
+                        <span><span class="block text-sm font-bold text-wood">FAQ</span><span class="block text-[10px] text-ink/50">Good to know</span></span>
+                    </a>
+                    <a href="about.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-terracotta/10 hover:border-terracotta/25 transition-all duration-300">
+                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-heart"></i></span>
+                        <span><span class="block text-sm font-bold text-wood">About</span><span class="block text-[10px] text-ink/50">Our story</span></span>
+                    </a>
+                    <a href="tel:08033725707" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-terracotta/10 hover:border-terracotta/25 transition-all duration-300">
+                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform"><i class="fa-solid fa-phone"></i></span>
+                        <span><span class="block text-sm font-bold text-wood">Contact</span><span class="block text-[10px] text-ink/50">Talk to our team</span></span>
+                    </a>
+                </div>
+                <div class="flex items-center justify-center gap-2 pt-4 text-[10px] font-semibold text-ink/45 tracking-wide"><span class="w-1.5 h-1.5 rounded-full bg-olive"></span> Thoughtful stays in Port Harcourt</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 space-y-8 relative z-10">
+
+        <!-- ================= HERO ================= -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-5 reveal">
+            <div class="lg:col-span-8 bento-card bento-terracotta rounded-4xl p-8 sm:p-10 ring-1 ring-white/70 shadow-xl shadow-terracotta/10 relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-terracotta/15 blur-3xl pointer-events-none"></div>
+                <div class="relative z-10">
+                    <span class="text-xs font-extrabold text-terracotta uppercase tracking-widest">01 / Reservation Details</span>
+                    <h1 class="editorial-title text-5xl sm:text-6xl font-bold text-wood mt-3 leading-[0.95]">Simple, all-inclusive<br>pricing.</h1>
+                    <p class="text-sm text-ink/80 leading-relaxed font-medium mt-6 max-w-lg">
+                        No hidden fees, no surprise charges. Every night at Clars includes power, Wi-Fi, housekeeping, security, and parking. What you see is what you pay.
+                    </p>
+                </div>
+                <div class="relative z-10 mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
+                    <div class="ios-pill rounded-2xl px-3 py-2.5 text-center">
+                        <p class="text-lg font-extrabold text-wood leading-none">₦150k</p>
+                        <p class="text-[9px] font-bold uppercase tracking-wider text-ink/50 mt-1">Per Night</p>
+                    </div>
+                    <div class="ios-pill rounded-2xl px-3 py-2.5 text-center">
+                        <p class="text-lg font-extrabold text-terracotta leading-none">48h</p>
+                        <p class="text-[9px] font-bold uppercase tracking-wider text-ink/50 mt-1">Free Cancel</p>
+                    </div>
+                    <div class="ios-pill rounded-2xl px-3 py-2.5 text-center">
+                        <p class="text-lg font-extrabold text-olive leading-none">2</p>
+                        <p class="text-[9px] font-bold uppercase tracking-wider text-ink/50 mt-1">Max Guests</p>
+                    </div>
+                    <div class="ios-pill rounded-2xl px-3 py-2.5 text-center">
+                        <p class="text-lg font-extrabold text-slateBlue leading-none">24/7</p>
+                        <p class="text-[9px] font-bold uppercase tracking-wider text-ink/50 mt-1">Support</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-4 bento-card bento-olive rounded-4xl p-3 overflow-hidden group shadow-lg shadow-olive/10 ring-1 ring-white/60">
+                <div class="relative h-full min-h-[260px] rounded-3xl overflow-hidden">
+                    <img src="./m (16).jpeg" alt="Clars Apartment living area" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-paper/90 via-transparent to-transparent"></div>
+                    <figcaption class="absolute bottom-3 left-3 ios-pill px-3 py-1.5 rounded-full text-wood text-[11px] font-bold">The Clars Stay</figcaption>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= RATE CARDS ================= -->
+        <section class="space-y-4 pt-4 reveal">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end px-2 mb-2">
+                <div>
+                    <span class="text-xs font-extrabold text-terracotta uppercase tracking-widest">02 / Rates</span>
+                    <h2 class="editorial-title text-4xl sm:text-5xl font-bold text-wood mt-1">Choose Your Stay</h2>
+                </div>
+                <p class="text-xs text-ink/70 max-w-xs mt-2 sm:mt-0 font-medium leading-relaxed">Transparent nightly rates. Longer stays may qualify for a custom quote.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+                <!-- Standard Nightly -->
+                <div class="bento-card bento-terracotta rounded-4xl p-8 flex flex-col justify-between relative overflow-hidden shadow-xl shadow-terracotta/10 ring-1 ring-white/70">
+                    <div class="absolute -right-12 -top-12 w-40 h-40 rounded-full bg-terracotta/15 blur-2xl pointer-events-none"></div>
+                    <div class="space-y-4 relative z-10">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-extrabold uppercase tracking-widest text-terracotta">Standard</span>
+                            <span class="text-[9px] font-extrabold uppercase tracking-widest text-white bg-terracotta px-2.5 py-1 rounded-full">Most Popular</span>
+                        </div>
+                        <h3 class="editorial-title text-2xl font-bold text-wood">The Clars Night</h3>
+                        <p class="text-xs text-ink/70 leading-relaxed font-medium">The full Clars experience for a single night — perfect for a stopover or a quick escape.</p>
+                        <div class="pt-4 border-t border-stone/80 flex items-baseline space-x-2">
+                            <span class="text-4xl font-extrabold text-wood tracking-tight">₦150,000</span>
+                            <span class="text-[10px] text-terracotta font-mono uppercase font-bold">/ night</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 space-y-2.5 relative z-10">
+                        <a href="booking.html" class="w-full py-3.5 btn-gradient-terracotta font-extrabold text-[10px] uppercase tracking-wider rounded-xl transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calendar-check"></i><span>Book This Rate</span>
+                        </a>
+                        <a href="https://wa.me/2348033725707" target="_blank" rel="noopener" class="w-full py-3 ios-pill hover:bg-olive/10 text-olive font-bold text-[10px] uppercase tracking-wider rounded-xl transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-xs"></i><span>Ask a Question</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Weekend Escape -->
+                <div class="bento-card bento-olive rounded-4xl p-8 flex flex-col justify-between relative overflow-hidden shadow-xl shadow-olive/10 ring-1 ring-white/70">
+                    <div class="absolute -left-12 -bottom-12 w-40 h-40 rounded-full bg-olive/15 blur-2xl pointer-events-none"></div>
+                    <div class="space-y-4 relative z-10">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-extrabold uppercase tracking-widest text-olive">Weekend</span>
+                            <span class="text-[9px] font-extrabold uppercase tracking-widest text-white bg-olive px-2.5 py-1 rounded-full">2 Nights</span>
+                        </div>
+                        <h3 class="editorial-title text-2xl font-bold text-wood">Weekend Escape</h3>
+                        <p class="text-xs text-ink/70 leading-relaxed font-medium">Friday to Sunday. Settle in, slow down, and make the most of a private weekend in the city.</p>
+                        <div class="pt-4 border-t border-stone/80 flex items-baseline space-x-2">
+                            <span class="text-4xl font-extrabold text-wood tracking-tight">₦280,000</span>
+                            <span class="text-[10px] text-olive font-mono uppercase font-bold">/ 2 nights</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 space-y-2.5 relative z-10">
+                        <a href="booking.html" class="w-full py-3.5 btn-gradient-olive font-extrabold text-[10px] uppercase tracking-wider rounded-xl transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calendar-check"></i><span>Book Weekend</span>
+                        </a>
+                        <a href="https://wa.me/2348033725707" target="_blank" rel="noopener" class="w-full py-3 ios-pill hover:bg-olive/10 text-olive font-bold text-[10px] uppercase tracking-wider rounded-xl transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-xs"></i><span>Ask a Question</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Extended Stay -->
+                <div class="bento-card bento-slate rounded-4xl p-8 flex flex-col justify-between relative overflow-hidden shadow-xl shadow-slateBlue/10 ring-1 ring-white/70">
+                    <div class="absolute -right-12 -bottom-12 w-40 h-40 rounded-full bg-slateBlue/15 blur-2xl pointer-events-none"></div>
+                    <div class="space-y-4 relative z-10">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-extrabold uppercase tracking-widest text-slateBlue">Extended</span>
+                            <span class="text-[9px] font-extrabold uppercase tracking-widest text-white bg-slateBlue px-2.5 py-1 rounded-full">7+ Nights</span>
+                        </div>
+                        <h3 class="editorial-title text-2xl font-bold text-wood">Long Stay</h3>
+                        <p class="text-xs text-ink/70 leading-relaxed font-medium">A full week or more, with a reduced nightly rate and flexible housekeeping schedule.</p>
+                        <div class="pt-4 border-t border-stone/80 flex items-baseline space-x-2">
+                            <span class="text-4xl font-extrabold text-wood tracking-tight">₦135,000</span>
+                            <span class="text-[10px] text-slateBlue font-mono uppercase font-bold">/ night</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 space-y-2.5 relative z-10">
+                        <a href="booking.html" class="w-full py-3.5 bg-slateBlue text-white font-extrabold text-[10px] uppercase tracking-wider rounded-xl transition-all active:scale-[0.98] hover:bg-slateBlue/90 shadow-md flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calendar-check"></i><span>Enquire Long Stay</span>
+                        </a>
+                        <a href="https://wa.me/2348033725707" target="_blank" rel="noopener" class="w-full py-3 ios-pill hover:bg-slateBlue/10 text-slateBlue font-bold text-[10px] uppercase tracking-wider rounded-xl transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-xs"></i><span>Ask a Question</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-[10px] text-ink/50 font-medium px-2">* Extended stay rates apply to bookings of 7 nights or more. Rates are subject to availability and may vary during peak periods. All prices are in Nigerian Naira (₦).</p>
+        </section>
+
+        <!-- ================= WHAT'S INCLUDED ================= -->
+        <section class="space-y-4 pt-4 reveal">
+            <div class="px-2 mb-2">
+                <span class="text-xs font-extrabold text-terracotta uppercase tracking-widest">03 / Inclusions</span>
+                <h2 class="editorial-title text-4xl sm:text-5xl font-bold text-wood mt-1">Included in Every Night</h2>
+                <p class="text-sm text-ink/70 mt-3 max-w-xl">No add-ons, no upsells. Every booking at Clars includes the full list below.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
+                <div class="md:col-span-7 bento-card bento-olive rounded-4xl p-8 ring-1 ring-white/60 shadow-lg shadow-olive/10">
+                    <h3 class="text-lg font-extrabold text-wood tracking-tight mb-5">Everything in the rate</h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                        <li class="flex items-start space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-olive/15 text-olive flex items-center justify-center text-[10px] mt-0.5 flex-shrink-0"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-sm font-semibold text-ink/80">24/7 uninterrupted power</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-olive/15 text-olive flex items-center justify-center text-[10px] mt-0.5 flex-shrink-0"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-sm font-semibold text-ink/80">High-speed fibre Wi-Fi</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-olive/15 text-olive flex items-center justify-center text-[10px] mt-0.5 flex-shrink-0"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-sm font-semibold text-ink/80">Housekeeping & fresh linen</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-olive/15 text-olive flex items-center justify-center text-[10px] mt-0.5 flex-shrink-0"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-sm font-semibold text-ink/80">24-hour gated security</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-olive/15 text-olive flex items-center justify-center text-[10px] mt-0.5 flex-shrink-0"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-sm font-semibold text-ink/80">Private on-site parking</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-olive/15 text-olive flex items-center justify-center text-[10px] mt-0.5 flex-shrink-0"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-sm font-semibold text-ink/80">Smart TV + Netflix & DSTV</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-olive/15 text-olive flex items-center justify-center text-[10px] mt-0.5 flex-shrink-0"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-sm font-semibold text-ink/80">Fully equipped kitchen</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-olive/15 text-olive flex items-center justify-center text-[10px] mt-0.5 flex-shrink-0"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-sm font-semibold text-ink/80">Free cancellation (48 hrs)</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-olive/15 text-olive flex items-center justify-center text-[10px] mt-0.5 flex-shrink-0"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-sm font-semibold text-ink/80">Fresh bath & hand towels</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-olive/15 text-olive flex items-center justify-center text-[10px] mt-0.5 flex-shrink-0"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-sm font-semibold text-ink/80">Air conditioning throughout</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-5 flex flex-col gap-5">
+                    <div class="bento-card bento-terracotta rounded-4xl p-7 ring-1 ring-white/60 shadow-lg shadow-terracotta/10">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-11 h-11 squircle-icon-terracotta flex items-center justify-center text-white text-base"><i class="fa-solid fa-money-bill-wave"></i></div>
+                            <span class="text-xs font-extrabold text-terracotta uppercase tracking-widest">Payment Terms</span>
+                        </div>
+                        <ul class="space-y-3 mt-4">
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-terracotta text-[10px] mt-1.5"></i>
+                                <span class="text-xs font-semibold text-ink/80">Full payment confirms your reservation.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-terracotta text-[10px] mt-1.5"></i>
+                                <span class="text-xs font-semibold text-ink/80">Bank transfer or cash accepted.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-terracotta text-[10px] mt-1.5"></i>
+                                <span class="text-xs font-semibold text-ink/80">Receipt issued for every payment.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bento-card bento-slate rounded-4xl p-7 ring-1 ring-white/60 shadow-lg shadow-slateBlue/10">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-11 h-11 squircle-icon-slate flex items-center justify-center text-white text-base"><i class="fa-solid fa-rotate-left"></i></div>
+                            <span class="text-xs font-extrabold text-slateBlue uppercase tracking-widest">Cancellation</span>
+                        </div>
+                        <p class="text-xs text-ink/70 font-medium leading-relaxed mt-3">Free cancellation up to <span class="font-bold text-wood">48 hours</span> before check-in. Cancellations within 48 hours may incur a charge. Please confirm the terms for your specific dates with our team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ADD-ONS ================= -->
+        <section class="space-y-4 pt-4 reveal">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end px-2 mb-2">
+                <div>
+                    <span class="text-xs font-extrabold text-terracotta uppercase tracking-widest">04 / Optional Extras</span>
+                    <h2 class="editorial-title text-4xl sm:text-5xl font-bold text-wood mt-1">Available on Request</h2>
+                </div>
+                <p class="text-xs text-ink/70 max-w-xs mt-2 sm:mt-0 font-medium leading-relaxed">Enquire with our team for availability and pricing.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="bento-card bento-olive rounded-4xl p-6 ring-1 ring-white/60 shadow-lg shadow-olive/10 flex flex-col space-y-4 group">
+                    <div class="w-11 h-11 squircle-icon flex items-center justify-center text-white text-base group-hover:scale-110 transition-transform"><i class="fa-solid fa-user-plus"></i></div>
+                    <div>
+                        <h3 class="text-base font-bold text-wood tracking-tight">Extra Guest</h3>
+                        <p class="text-[11px] text-ink/70 mt-1.5 font-medium leading-relaxed">Additional guests may be accommodated on request, subject to availability.</p>
+                    </div>
+                </div>
+                <div class="bento-card bento-terracotta rounded-4xl p-6 ring-1 ring-white/60 shadow-lg shadow-terracotta/10 flex flex-col space-y-4 group">
+                    <div class="w-11 h-11 squircle-icon-terracotta flex items-center justify-center text-white text-base group-hover:scale-110 transition-transform"><i class="fa-solid fa-car"></i></div>
+                    <div>
+                        <h3 class="text-base font-bold text-wood tracking-tight">Airport Pickup</h3>
+                        <p class="text-[11px] text-ink/70 mt-1.5 font-medium leading-relaxed">Arrange a private transfer from Port Harcourt International. Ask for details.</p>
+                    </div>
+                </div>
+                <div class="bento-card bento-slate rounded-4xl p-6 ring-1 ring-white/60 shadow-lg shadow-slateBlue/10 flex flex-col space-y-4 group">
+                    <div class="w-11 h-11 squircle-icon-slate flex items-center justify-center text-white text-base group-hover:scale-110 transition-transform"><i class="fa-solid fa-basket-shopping"></i></div>
+                    <div>
+                        <h3 class="text-base font-bold text-wood tracking-tight">Welcome Pack</h3>
+                        <p class="text-[11px] text-ink/70 mt-1.5 font-medium leading-relaxed">Pre-stocked groceries and essentials ready when you arrive. Request in advance.</p>
+                    </div>
+                </div>
+                <div class="bento-card bento-olive rounded-4xl p-6 ring-1 ring-white/60 shadow-lg shadow-olive/10 flex flex-col space-y-4 group">
+                    <div class="w-11 h-11 squircle-icon-wood flex items-center justify-center text-white text-base group-hover:scale-110 transition-transform"><i class="fa-solid fa-broom"></i></div>
+                    <div>
+                        <h3 class="text-base font-bold text-wood tracking-tight">Extra Housekeeping</h3>
+                        <p class="text-[11px] text-ink/70 mt-1.5 font-medium leading-relaxed">Additional daily or mid-stay cleaning available at a small fee.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= COMPARISON TABLE ================= -->
+        <section class="space-y-4 pt-4 reveal">
+            <div class="px-2 mb-2">
+                <span class="text-xs font-extrabold text-terracotta uppercase tracking-widest">05 / At a Glance</span>
+                <h2 class="editorial-title text-4xl sm:text-5xl font-bold text-wood mt-1">Rate Comparison</h2>
+            </div>
+            <div class="bento-card bento-terracotta rounded-4xl p-2 sm:p-4 ring-1 ring-white/70 shadow-xl shadow-terracotta/10 overflow-x-auto">
+                <table class="w-full min-w-[560px] text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-stone/70">
+                            <th class="px-4 py-4 text-[10px] font-extrabold uppercase tracking-widest text-ink/50">Feature</th>
+                            <th class="px-4 py-4 text-[10px] font-extrabold uppercase tracking-widest text-terracotta text-center">Standard Night</th>
+                            <th class="px-4 py-4 text-[10px] font-extrabold uppercase tracking-widest text-olive text-center">Weekend Escape</th>
+                            <th class="px-4 py-4 text-[10px] font-extrabold uppercase tracking-widest text-slateBlue text-center">Long Stay (7+)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-xs font-semibold text-ink/80">
+                        <tr class="border-b border-stone/40">
+                            <td class="px-4 py-3.5 font-bold text-wood">Rate</td>
+                            <td class="px-4 py-3.5 text-center">₦150,000 / night</td>
+                            <td class="px-4 py-3.5 text-center">₦280,000 / 2 nights</td>
+                            <td class="px-4 py-3.5 text-center">₦135,000 / night</td>
+                        </tr>
+                        <tr class="border-b border-stone/40">
+                            <td class="px-4 py-3.5 font-bold text-wood">Minimum stay</td>
+                            <td class="px-4 py-3.5 text-center">1 night</td>
+                            <td class="px-4 py-3.5 text-center">2 nights (Fri–Sun)</td>
+                            <td class="px-4 py-3.5 text-center">7 nights</td>
+                        </tr>
+                        <tr class="border-b border-stone/40">
+                            <td class="px-4 py-3.5 font-bold text-wood">Power, Wi-Fi & security</td>
+                            <td class="px-4 py-3.5 text-center text-olive"><i class="fa-solid fa-check"></i></td>
+                            <td class="px-4 py-3.5 text-center text-olive"><i class="fa-solid fa-check"></i></td>
+                            <td class="px-4 py-3.5 text-center text-olive"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr class="border-b border-stone/40">
+                            <td class="px-4 py-3.5 font-bold text-wood">Housekeeping</td>
+                            <td class="px-4 py-3.5 text-center text-olive"><i class="fa-solid fa-check"></i></td>
+                            <td class="px-4 py-3.5 text-center text-olive"><i class="fa-solid fa-check"></i></td>
+                            <td class="px-4 py-3.5 text-center text-olive"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr class="border-b border-stone/40">
+                            <td class="px-4 py-3.5 font-bold text-wood">Free cancellation</td>
+                            <td class="px-4 py-3.5 text-center text-olive">48 hrs</td>
+                            <td class="px-4 py-3.5 text-center text-olive">48 hrs</td>
+                            <td class="px-4 py-3.5 text-center text-olive">48 hrs</td>
+                        </tr>
+                        <tr class="border-b border-stone/40">
+                            <td class="px-4 py-3.5 font-bold text-wood">Best for</td>
+                            <td class="px-4 py-3.5 text-center">Stopovers & quick trips</td>
+                            <td class="px-4 py-3.5 text-center">Weekend escapes</td>
+                            <td class="px-4 py-3.5 text-center">Business & relocation</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-4"></td>
+                            <td class="px-4 py-4 text-center"><a href="booking.html" class="inline-flex items-center gap-1.5 px-4 py-2 btn-gradient-terracotta text-[9px] font-extrabold uppercase tracking-wider rounded-lg active:scale-95 transition-all"><span>Book</span><i class="fa-solid fa-arrow-right text-[8px]"></i></a></td>
+                            <td class="px-4 py-4 text-center"><a href="booking.html" class="inline-flex items-center gap-1.5 px-4 py-2 btn-gradient-olive text-[9px] font-extrabold uppercase tracking-wider rounded-lg active:scale-95 transition-all"><span>Book</span><i class="fa-solid fa-arrow-right text-[8px]"></i></a></td>
+                            <td class="px-4 py-4 text-center"><a href="booking.html" class="inline-flex items-center gap-1.5 px-4 py-2 bg-slateBlue text-white text-[9px] font-extrabold uppercase tracking-wider rounded-lg active:scale-95 transition-all hover:bg-slateBlue/90 shadow-md"><span>Enquire</span><i class="fa-solid fa-arrow-right text-[8px]"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ================= FAQ ================= -->
+        <section class="space-y-4 pt-4 reveal">
+            <div class="px-2 mb-2">
+                <span class="text-xs font-extrabold text-terracotta uppercase tracking-widest">06 / Questions</span>
+                <h2 class="editorial-title text-4xl sm:text-5xl font-bold text-wood mt-1">Pricing FAQs</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <details class="bento-card bento-olive rounded-3xl p-5 sm:p-6 group">
+                    <summary class="flex items-center justify-between gap-4 text-sm font-bold text-wood"><span>Are there any hidden fees?</span><i class="fa-solid fa-plus faq-icon text-terracotta"></i></summary>
+                    <p class="text-sm text-ink/70 leading-relaxed mt-4">No. The nightly rate includes power, Wi-Fi, housekeeping, security, parking, and access to all amenities. The only extras are optional add-ons you request separately.</p>
+                </details>
+                <details class="bento-card bento-terracotta rounded-3xl p-5 sm:p-6 group">
+                    <summary class="flex items-center justify-between gap-4 text-sm font-bold text-wood"><span>How do I pay?</span><i class="fa-solid fa-plus faq-icon text-terracotta"></i></summary>
+                    <p class="text-sm text-ink/70 leading-relaxed mt-4">Payment is by bank transfer or cash. Full payment confirms your reservation, and a receipt is issued for every payment.</p>
+                </details>
+                <details class="bento-card bento-slate rounded-3xl p-5 sm:p-6 group">
+                    <summary class="flex items-center justify-between gap-4 text-sm font-bold text-wood"><span>Can I get a discount for a longer stay?</span><i class="fa-solid fa-plus faq-icon text-terracotta"></i></summary>
+                    <p class="text-sm text-ink/70 leading-relaxed mt-4">Yes. Stays of 7 nights or more qualify for our reduced Long Stay rate of ₦135,000 per night. Contact our team for a custom quote on extended bookings.</p>
+                </details>
+                <details class="bento-card bento-olive rounded-3xl p-5 sm:p-6 group">
+                    <summary class="flex items-center justify-between gap-4 text-sm font-bold text-wood"><span>What is your cancellation policy?</span><i class="fa-solid fa-plus faq-icon text-terracotta"></i></summary>
+                    <p class="text-sm text-ink/70 leading-relaxed mt-4">Free cancellation up to 48 hours before check-in. Cancellations within 48 hours may incur a charge. Please confirm the terms for your dates with our team.</p>
+                </details>
+                <details class="bento-card bento-terracotta rounded-3xl p-5 sm:p-6 group">
+                    <summary class="flex items-center justify-between gap-4 text-sm font-bold text-wood"><span>Do rates change during peak periods?</span><i class="fa-solid fa-plus faq-icon text-terracotta"></i></summary>
+                    <p class="text-sm text-ink/70 leading-relaxed mt-4">Rates may vary during public holidays and peak periods. Please confirm the rate for your specific dates when you enquire.</p>
+                </details>
+                <details class="bento-card bento-slate rounded-3xl p-5 sm:p-6 group">
+                    <summary class="flex items-center justify-between gap-4 text-sm font-bold text-wood"><span>How many guests are included?</span><i class="fa-solid fa-plus faq-icon text-terracotta"></i></summary>
+                    <p class="text-sm text-ink/70 leading-relaxed mt-4">The standard rate covers up to 2 guests. Additional guests may be accommodated on request — please ask our team for availability and pricing.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="bento-card bento-olive rounded-4xl sm:rounded-5xl p-8 sm:p-12 text-center relative overflow-hidden reveal">
+            <div class="absolute -right-20 -top-24 w-72 h-72 rounded-full bg-terracotta/15 blur-3xl pointer-events-none"></div>
+            <div class="absolute -left-20 -bottom-24 w-72 h-72 rounded-full bg-olive/20 blur-3xl pointer-events-none"></div>
+            <div class="relative z-10 max-w-2xl mx-auto">
+                <span class="text-xs font-extrabold text-terracotta uppercase tracking-widest">Ready when you are</span>
+                <h2 class="editorial-title text-4xl sm:text-6xl font-bold text-wood mt-3">Lock in your dates.</h2>
+                <p class="text-sm text-ink/70 mt-4 leading-relaxed">Check availability for your preferred dates. Our team will confirm within hours and walk you through payment.</p>
+                <div class="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
+                    <a href="booking.html" class="inline-flex items-center gap-2 px-7 py-4 btn-gradient-wood text-xs font-extrabold uppercase tracking-wider rounded-2xl transition-all active:scale-95">
+                        <span>Check Availability</span><i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="https://wa.me/2348033725707" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-7 py-4 ios-pill text-wood text-xs font-extrabold uppercase tracking-wider rounded-2xl transition-all active:scale-95 hover:bg-sand/60">
+                        <i class="fa-brands fa-whatsapp text-olive"></i><span>WhatsApp Us</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="relative z-10 border-t border-stone/60 bg-white/50 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+                <div>
+                    <a href="index.html" class="inline-flex items-center space-x-3">
+                        <span class="text-xl font-bold text-wood tracking-tight brand-lowercase">clars<span class="text-terracotta">.</span></span>
+                    </a>
+                    <p class="text-xs text-ink/60 mt-2">A considered short stay in GRA Phase 3, Port Harcourt.</p>
+                </div>
+                <div class="flex flex-wrap gap-x-5 gap-y-3 text-xs font-bold text-ink/70">
+                    <a href="index.html" class="hover:text-terracotta transition-colors">Home</a>
+                    <a href="gallery.html" class="hover:text-terracotta transition-colors">Amenities</a>
+                    <a href="prices.html" class="text-terracotta transition-colors">Prices</a>
+                    <a href="booking.html" class="hover:text-terracotta transition-colors">Book</a>
+                    <a href="faq.html" class="hover:text-terracotta transition-colors">FAQ</a>
+                    <a href="about.html" class="hover:text-terracotta transition-colors">About</a>
+                </div>
+                <a href="tel:08033725707" class="inline-flex items-center gap-2 text-sm font-bold text-wood hover:text-terracotta transition-colors"><i class="fa-solid fa-phone text-terracotta"></i>0803 372 5707</a>
+            </div>
+            <div class="mt-8 pt-5 border-t border-stone/50 flex flex-col sm:flex-row justify-between gap-2 text-[11px] text-ink/50">
+                <span>© <span id="currentYear"></span> Clars Apartment. All rights reserved.</span>
+                <a href="#top" class="hover:text-terracotta transition-colors">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            const expanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+            mobileMenuBtn.setAttribute('aria-expanded', String(!expanded));
+            mobileMenu.classList.toggle('max-h-0', expanded);
+            mobileMenu.classList.toggle('opacity-0', expanded);
+            mobileMenu.classList.toggle('pointer-events-none', expanded);
+            mobileMenu.classList.toggle('max-h-[32rem]', !expanded);
+            mobileMenu.querySelector('i').className = expanded ? 'fa-solid fa-bars text-sm' : 'fa-solid fa-xmark text-sm';
+        });
+        mobileMenu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenu.classList.add('max-h-0', 'opacity-0', 'pointer-events-none');
+            mobileMenu.classList.remove('max-h-[32rem]');
+            mobileMenuBtn.querySelector('i').className = 'fa-solid fa-bars text-sm';
+        }));
+
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.reveal').forEach((section) => revealObserver.observe(section));
+        } else {
+            document.querySelectorAll('.reveal').forEach((section) => section.classList.add('in-view'));
+        }
+    </script>
+</body>
+</html>
