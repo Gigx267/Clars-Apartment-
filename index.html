@@ -258,7 +258,7 @@
     <div class="ambient-glow-olive w-[600px] h-[600px] bottom-[-100px] left-[20%]"></div>
 
   <!-- ================= FLOATING NAV ================= -->
-    <header class="fixed top-4 left-0 right-0 z-50 w-full max-w-full box-border px-3 sm:px-4">
+    <header class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full md:w-1/2 max-w-full box-border px-3 sm:px-4">
         <!-- Navbar spans the full screen width -->
         <nav class="w-full min-w-0 max-w-full box-border flex items-center justify-between bg-white/80 backdrop-blur-xl border border-stone/60 rounded-full px-3 sm:px-4 py-3 shadow-lg shadow-wood/5 transition-all duration-300">
             <a href="index.html" class="flex shrink-0 items-center space-x-2 group">
@@ -280,6 +280,10 @@
             </div>
 
             <div class="flex shrink-0 items-center space-x-2">
+                <audio controls autoplay preload="auto" class="w-20 sm:w-24 h-8" aria-label="Background music player">
+                    <source src="./m2.mp3" type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
                 <a href="tel:08033725707" class="hidden sm:flex w-8 h-8 items-center justify-center rounded-full bg-olive/10 text-olive hover:bg-olive hover:text-white transition-colors duration-200" aria-label="Call us">
                     <i class="fa-solid fa-phone text-[10px]"></i>
                 </a>
