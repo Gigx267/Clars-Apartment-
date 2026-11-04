@@ -258,9 +258,9 @@
     <div class="ambient-glow-olive w-[600px] h-[600px] bottom-[-100px] left-[20%]"></div>
 
   <!-- ================= FLOATING NAV ================= -->
-    <header class="fixed top-4 left-0 right-0 z-50 px-3 sm:px-6 lg:px-8">
-        <!-- Navbar spans exactly half the screen width, anchored to the left -->
-        <nav class="w-1/2 flex items-center justify-between bg-white/80 backdrop-blur-xl border border-stone/60 rounded-2xl px-3 sm:px-4 py-3 shadow-lg shadow-wood/5 transition-all duration-300">
+    <header class="fixed top-4 left-0 right-0 z-50 px-3 sm:px-4">
+        <!-- Navbar spans the full screen width -->
+        <nav class="w-full flex items-center justify-between bg-white/80 backdrop-blur-xl border border-stone/60 rounded-full px-3 sm:px-4 py-3 shadow-lg shadow-wood/5 transition-all duration-300">
             <a href="index.html" class="flex shrink-0 items-center space-x-2 group">
                 <div class="flex items-center space-x-1">
                     <span class="block w-1.5 h-6 bg-wood rounded-full transform group-hover:scale-y-110 transition-transform"></span>
@@ -289,8 +289,8 @@
             </div>
         </nav>
 
-        <!-- Mobile Menu Container also anchored left and spans half width -->
-        <div id="mobileMenu" class="lg:hidden mt-3 w-1/2 bg-white/90 backdrop-blur-2xl border border-white/80 rounded-[1.75rem] shadow-2xl shadow-wood/15 overflow-x-hidden overflow-y-auto transition-all duration-500 ease-out max-h-0 opacity-0 pointer-events-none -translate-y-2">
+        <!-- Mobile menu matches the full-width navbar -->
+        <div id="mobileMenu" class="lg:hidden mt-3 w-full bg-white/90 backdrop-blur-2xl border border-white/80 rounded-[1.75rem] shadow-2xl shadow-wood/15 overflow-x-hidden overflow-y-auto transition-all duration-500 ease-out max-h-0 opacity-0 pointer-events-none -translate-y-2">
             <div class="p-4">
                 <div class="flex items-center justify-between px-1 pb-3">
                     <div>
