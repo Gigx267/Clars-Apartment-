@@ -92,72 +92,77 @@
     <div class="ambient-glow-slate w-[650px] h-[650px] top-[50%] left-[-100px]"></div>
     <div class="ambient-glow-terracotta w-[600px] h-[600px] bottom-[-100px] right-[-120px]"></div>
 
-    <!-- ================= FLOATING NAV ================= -->
-    <header class="fixed top-4 inset-x-0 z-50 px-4 sm:px-6 lg:px-8">
-        <nav class="max-w-7xl mx-auto flex items-center justify-between bg-white/80 backdrop-blur-xl border border-stone/60 rounded-2xl px-5 sm:px-6 py-3 shadow-lg shadow-wood/5 transition-all duration-300">
-            <a href="index.html" class="flex items-center space-x-3 group">
+      <!-- ================= FLOATING NAV ================= -->
+    <header class="fixed top-4 left-0 right-0 z-50 px-3 sm:px-4">
+        <!-- Navbar spans the full screen width -->
+        <nav class="w-full flex items-center justify-between bg-white/80 backdrop-blur-xl border border-stone/60 rounded-full px-3 sm:px-4 py-3 shadow-lg shadow-wood/5 transition-all duration-300">
+            <a href="index.html" class="flex shrink-0 items-center space-x-2 group">
                 <div class="flex items-center space-x-1">
-                    <span class="block w-1.5 h-7 bg-wood rounded-full transform group-hover:scale-y-110 transition-transform"></span>
-                    <span class="block w-1.5 h-8 bg-terracotta rounded-full transform group-hover:scale-y-110 transition-transform delay-75"></span>
-                    <span class="block w-1.5 h-6 bg-olive rounded-full transform group-hover:scale-y-110 transition-transform delay-150"></span>
+                    <span class="block w-1.5 h-6 bg-wood rounded-full transform group-hover:scale-y-110 transition-transform"></span>
+                    <span class="block w-1.5 h-7 bg-terracotta rounded-full transform group-hover:scale-y-110 transition-transform delay-75"></span>
+                    <span class="block w-1.5 h-5 bg-olive rounded-full transform group-hover:scale-y-110 transition-transform delay-150"></span>
                 </div>
-                <span class="text-xl font-bold text-wood tracking-tight brand-lowercase">clars<span class="text-terracotta">.</span></span>
+                <span class="text-lg font-bold text-wood tracking-tight brand-lowercase">clars<span class="text-terracotta">.</span></span>
             </a>
 
+            <!-- Desktop links (hidden below lg) -->
             <div class="hidden lg:flex items-center space-x-1">
-                <a href="index.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Home</a>
-                <a href="prices.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Prices</a>
-                <a href="booking.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Book</a>
-                <a href="gallery.html" aria-current="page" class="px-3 py-2 text-[11px] font-bold text-terracotta uppercase tracking-wider rounded-full bg-terracotta/10 border border-terracotta/30 transition-all duration-200">Amenities</a>
-                <a href="faq.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">FAQ</a>
-                <a href="about.html" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">About</a>
-                <a href="tel:08033725707" class="px-3 py-2 text-[11px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Contact</a>
+                <a href="about.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">About</a>
+                <a href="prices.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Prices</a>
+                <a href="booking.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Book</a>
+                <a href="gallery.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">Amenities</a>
+                <a href="faq.html" class="px-2 py-2 text-[10px] font-bold text-ink/80 hover:text-wood uppercase tracking-wider rounded-full hover:bg-sand/50 transition-all duration-200">FAQ</a>
             </div>
 
-            <div class="flex items-center space-x-2 sm:space-x-3">
-                <a href="tel:08033725707" class="w-9 h-9 flex items-center justify-center rounded-full bg-olive/10 text-olive hover:bg-olive hover:text-white transition-colors duration-200" aria-label="Call us">
-                    <i class="fa-solid fa-phone text-xs"></i>
+            <div class="flex shrink-0 items-center space-x-2">
+                <a href="tel:08033725707" class="hidden sm:flex w-8 h-8 items-center justify-center rounded-full bg-olive/10 text-olive hover:bg-olive hover:text-white transition-colors duration-200" aria-label="Call us">
+                    <i class="fa-solid fa-phone text-[10px]"></i>
                 </a>
-                <a href="booking.html" class="hidden sm:flex items-center space-x-2 px-4 sm:px-5 py-2.5 bg-wood text-white text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-wood/90 transition-all duration-200 shadow-md shadow-wood/20 active:scale-95">
-                    <span>Book Now</span>
-                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                </a>
-                <button id="mobileMenuBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full bg-wood text-white hover:bg-terracotta transition-all duration-300 shadow-md shadow-wood/15" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
-                    <i class="fa-solid fa-bars text-sm"></i>
+                <button id="mobileMenuBtn" class="lg:hidden w-8 h-8 flex items-center justify-center rounded-full bg-wood text-white hover:bg-terracotta transition-all duration-300 shadow-md shadow-wood/15" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <i class="fa-solid fa-bars text-xs"></i>
                 </button>
             </div>
         </nav>
 
-        <div id="mobileMenu" class="lg:hidden mt-3 max-w-7xl mx-auto bg-white/90 backdrop-blur-2xl border border-white/80 rounded-[1.75rem] shadow-2xl shadow-wood/15 overflow-hidden transition-all duration-500 ease-out max-h-0 opacity-0 pointer-events-none -translate-y-2">
-            <div class="p-4 sm:p-5">
-                <div class="grid grid-cols-2 gap-2">
-                    <a href="index.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-olive/10 hover:border-olive/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-wood shadow-sm flex items-center justify-center"><i class="fa-solid fa-house"></i></span>
-                        <span class="block text-sm font-bold text-wood">Home</span>
+        <!-- Mobile menu matches the full-width navbar -->
+        <div id="mobileMenu" class="lg:hidden mt-3 w-full bg-white/90 backdrop-blur-2xl border border-white/80 rounded-[1.75rem] shadow-2xl shadow-wood/15 overflow-x-hidden overflow-y-auto transition-all duration-500 ease-out max-h-0 opacity-0 pointer-events-none -translate-y-2">
+            <div class="p-4">
+                <div class="flex items-center justify-between px-1 pb-3">
+                    <div>
+                        <span class="block text-[9px] font-extrabold uppercase tracking-[.2em] text-terracotta">Discover</span>
+                        <span class="block text-sm font-bold text-wood tracking-tight mt-0.5">Where to next?</span>
+                    </div>
+                    <span class="w-8 h-8 rounded-xl bg-olive/10 text-olive flex items-center justify-center"><i class="fa-solid fa-compass text-xs"></i></span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <a href="index.html" class="group flex items-center gap-3 p-2.5 rounded-xl bg-sand/55 border border-stone/40 hover:bg-olive/10 hover:border-olive/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-wood shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-house"></i></span>
+                        <span class="text-xs font-bold text-wood">Home</span>
                     </a>
-                    <a href="prices.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-terracotta/10 hover:border-terracotta/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-terracotta shadow-sm flex items-center justify-center"><i class="fa-solid fa-tag"></i></span>
-                        <span class="block text-sm font-bold text-wood">Prices</span>
+                    <a href="prices.html" class="group flex items-center gap-3 p-2.5 rounded-xl bg-sand/55 border border-stone/40 hover:bg-terracotta/10 hover:border-terracotta/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-tag"></i></span>
+                        <span class="text-xs font-bold text-wood">Prices</span>
                     </a>
-                    <a href="booking.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-wood text-white border border-wood col-span-2">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white/15 text-white flex items-center justify-center"><i class="fa-solid fa-calendar-check"></i></span>
-                        <span class="block text-sm font-bold">Book your stay</span>
+                    <a href="booking.html" class="group flex items-center gap-3 p-2.5 rounded-xl bg-wood text-white border border-wood hover:bg-terracotta hover:border-terracotta transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white/15 text-white flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-calendar-check"></i></span>
+                        <span class="flex-1 text-xs font-bold">Book your stay</span>
+                        <i class="fa-solid fa-arrow-right text-[10px] mr-1"></i>
                     </a>
-                    <a href="gallery.html" aria-current="page" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-terracotta/10 border border-terracotta/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-terracotta shadow-sm flex items-center justify-center"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
-                        <span class="block text-sm font-bold text-wood">Amenities</span>
+                    <a href="gallery.html" class="group flex items-center gap-3 p-2.5 rounded-xl bg-sand/55 border border-stone/40 hover:bg-olive/10 hover:border-olive/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-olive shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                        <span class="text-xs font-bold text-wood">Amenities</span>
                     </a>
-                    <a href="faq.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-slateBlue/10 hover:border-slateBlue/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-slateBlue shadow-sm flex items-center justify-center"><i class="fa-solid fa-circle-question"></i></span>
-                        <span class="block text-sm font-bold text-wood">FAQ</span>
+                    <a href="faq.html" class="group flex items-center gap-3 p-2.5 rounded-xl bg-sand/55 border border-stone/40 hover:bg-slateBlue/10 hover:border-slateBlue/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-slateBlue shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-circle-question"></i></span>
+                        <span class="text-xs font-bold text-wood">FAQ</span>
                     </a>
-                    <a href="about.html" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-terracotta/10 hover:border-terracotta/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-terracotta shadow-sm flex items-center justify-center"><i class="fa-solid fa-heart"></i></span>
-                        <span class="block text-sm font-bold text-wood">About</span>
+                    <a href="about.html" aria-current="page" class="group flex items-center gap-3 p-2.5 rounded-xl bg-terracotta/10 border border-terracotta/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-heart"></i></span>
+                        <span class="text-xs font-bold text-wood">About</span>
                     </a>
-                    <a href="tel:08033725707" class="group flex items-center gap-3 p-3.5 rounded-2xl bg-sand/55 border border-stone/40 hover:bg-terracotta/10 hover:border-terracotta/25 transition-all duration-300">
-                        <span class="w-10 h-10 shrink-0 rounded-xl bg-white text-terracotta shadow-sm flex items-center justify-center"><i class="fa-solid fa-phone"></i></span>
-                        <span class="block text-sm font-bold text-wood">Contact</span>
+                    <a href="tel:08033725707" class="group flex items-center gap-3 p-2.5 rounded-xl bg-sand/55 border border-stone/40 hover:bg-terracotta/10 hover:border-terracotta/25 transition-all duration-300">
+                        <span class="w-8 h-8 shrink-0 rounded-lg bg-white text-terracotta shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform text-xs"><i class="fa-solid fa-phone"></i></span>
+                        <span class="text-xs font-bold text-wood">Contact</span>
                     </a>
                 </div>
             </div>
